@@ -1,0 +1,40 @@
+﻿<Window x:Class="PLWPF.AddTester"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="AddTester" Height="500" Width="500">
+    <Grid Margin="-2,0,2,0">
+        <Label x:Name="Main_label" FontSize="16" Content="Create an account" HorizontalAlignment="Left" VerticalAlignment="Top" Width="164" Margin="176,0,0,0"/>
+        <Label Content="Identify Address:" Grid.Column="0" HorizontalAlignment="Left" Margin="12,132,0,311" Grid.Row="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="branchAddressTextBox" HorizontalAlignment="Left" Height="23" Margin="331,256,0,190" Grid.Row="0" Text="{Binding branchAddress, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        <Label Content="Tester First Name:" Grid.Column="0" Margin="12,48,-6,395" VerticalAlignment="Center"/>
+        <Label Content="Tester last Name:" Grid.Column="0" Margin="12,74,-6,369" VerticalAlignment="Center"/>
+        <TextBox x:Name="branchNameTextBox" Height="24" Margin="331,225,41,220" Text="{Binding branchName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        <Label Content="birthday:" Grid.Column="0" Margin="12,163,318,280" VerticalAlignment="Center"/>
+        <TextBox x:Name="branchNumberTextBox" HorizontalAlignment="Left" Height="23" Margin="331,191,0,255" Text="{Binding branchNumber, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        <Label Content="Years of experience:" Grid.Column="0" HorizontalAlignment="Left" Margin="10,225,0,218" VerticalAlignment="Center"/>
+        <TextBox x:Name="branchNumWorkersTextBox" HorizontalAlignment="Left" Height="23" Margin="331,163,0,283" Text="{Binding branchNumWorkers, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        <Label Content="Gender:" Grid.Column="0" HorizontalAlignment="Left" Margin="12,103,0,340" VerticalAlignment="Center"/>
+        <TextBox x:Name="branchPhoneTextBox" HorizontalAlignment="Left" Height="23" Margin="331,79,0,367" Text="{Binding branchPhone, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        <Label Content="The maximum number of Test per week:" Grid.Column="0" HorizontalAlignment="Left" Margin="12,253,0,190" VerticalAlignment="Center"/>
+        <TextBox x:Name="branchResponsNameTextBox" HorizontalAlignment="Left" Height="24" Margin="331,134,0,311" Text="{Binding branchResponsName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        <Label Content="The type of vechile:" Grid.Column="0" HorizontalAlignment="Left" Margin="12,284,0,159" VerticalAlignment="Center"/>
+        <TextBox x:Name="freeDeliverNumTextBox" HorizontalAlignment="Left" Height="23" Margin="331,51,0,395" Text="{Binding freeDeliverNum, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        <Label Content="Telephone Number:" Grid.Column="0" HorizontalAlignment="Left" Margin="12,196,0,247" VerticalAlignment="Center"/>
+        <ComboBox x:Name="comboBox1" SelectedItem="{Binding hechsher}" Height="Auto" Margin="331,107,41,340" VerticalAlignment="Center" Width="120"/>
+        <Label x:Name="label" Content="Input your hours by &quot;Yes&quot; or &quot;No&quot;" HorizontalAlignment="Left" Height="27" Margin="-322,297,0,0" VerticalAlignment="Top" Width="277"/>
+        <Label x:Name="label1" Content="Maximum distance" HorizontalAlignment="Left" Height="32" Margin="12,347,0,0" VerticalAlignment="Top" Width="239"/>
+        <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Height="26" Margin="331,284,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="comboBox3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="comboBox4" HorizontalAlignment="Left" Height="27" Margin="331,315,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="WorkLoad" HorizontalAlignment="Left" Height="27" Margin="12,315,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="-219,257,0,0"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="28" Margin="331,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="ADD" HorizontalAlignment="Left" Height="42" Margin="340,417,0,0" VerticalAlignment="Top" Width="111" Click="button_Click"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="-162,134,0,0" VerticalAlignment="Top" Width="100"/>
+        <StackPanel/>
+    </Grid>
+</Window>

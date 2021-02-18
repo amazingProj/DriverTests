@@ -1,0 +1,116 @@
+﻿//Assaf Hillel
+using BE;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+
+    namespace BL
+    {
+        public class BL_imp : IBL
+
+        {
+        minimum_NumberOfLessos=20;
+            public calculate_age(DateTime t)
+            {
+                // Save today's date.
+                var today = DateTime.Today;
+                // Calculate the age.
+                var age = today.Year - birthdate.Year;
+                // Go back to the year the person was born in case of a leap year
+                if (birthdate > today.AddYears(-age)) age--;
+
+            }
+
+            public void addTester(Tester d)
+            {
+
+                if (Tester.birthday < 40)
+                    throw new Exception("Wrong the tester too young");
+                DAL.addTester(d);
+            }
+            void addStudent(DateTime d)
+            {
+                if (calculate_age(Trainee.birthday) < 40)
+                    throw new Exception("Wrong the tester too young");
+                DAL.addTrainee(d);
+            }
+            //Doesn't allow to retested less 7 days distance.
+            public void addTest(Test d)
+            {
+                if (addStudent.numberOfLessons < 20)
+                    throw new Exception("Wrong the student has done too less lessons");
+                if (checkValid(addTester testc))
+                    throw new Exception("Wrong the tester is busy");
+                //d.DataTime
+                if (d.time.year >= t.time.year)
+                {
+                    if (d.time.month >= t.time.month)
+                    {
+                        if (d.time.day > t.time.day + 7)
+                        {
+                            dal.addTest();
+                        }
+                    }
+                }
+                
+                //he already passed
+                if (t.pass1 != true)
+                {
+                    throw new Exception("Wrong the tester too young");
+                }
+                throw new Exception("Wrong the tester too young");
+
+                if (addTester.vechile != addStudent.vechile)
+                    throw new Exception("Errror");
+
+                if (!tester.test && !student.test)
+                    throw new Exception("Errror");
+
+                if ()
+                {
+
+                }
+            }
+            //        אין אפשרות להוסיף מבחן אם אין בוחן זמין לתאריך המבוקש של המבחן, ובתנאי שהבוחן
+            //לא שובץ באותו זמן למבחן אחר. במקרה כזה המערכת יכולה להציע לתלמיד זמן חילופי
+            //לביצוע המבחן
+            public void checkValid(Tester t)
+            {
+                //icp to the boliane matrix
+                if (t.rangeHours)
+                    throw new Exception("the order number have to be 8 digits");
+                if ((1 + t.TestCount) > t.maxTest)
+                    throw new Exception("the order number have to be 8 digits");
+                Branch b = dal.getAllBranch(br => o.branchNumber == br.branchNumber).FirstOrDefault();
+                if (b == null)
+                    throw new Exception("this branch doesn't exist");
+                if (o.hechsher != b.hechsher)
+                    throw new Exception("the choosed branch dosn't match the choosed hechsher"
+                        );
+                if ((o.clientPhoneNomber < 10000000) || (o.clientPhoneNomber > 999999999))
+                    throw new Exception("Wrong phone number");
+                if (!(o.orderDate.Year == DateTime.Now.Year && o.orderDate.Month == DateTime.Now.Month && o.orderDate.Day == DateTime.Now.Day))
+                    throw new Exception("The date is not today");
+                dal.addOrder(o);
+            }
+            void deleteTester(int ); //מחיקת מנה
+            void updateTest(Test d)
+            {
+                if (detail.tttttt == null || == null ||== null ||=== null ||== null)
+                {
+                    throw new Exception("able not to update test");
+                }
+
+            }
+
+            public (List<Tester>){
+        List<Tester> list = new List<Tester>;
+        if(Tester[1].)
+        list.
+        }
+
+    }
+

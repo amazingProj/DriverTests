@@ -1,0 +1,17 @@
+﻿<Window x:Class="PLWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>      
+        <Image x:Name="image" HorizontalAlignment="Left" Height="185" Margin="131,48,0,0" VerticalAlignment="Top" Width="250" Source="מסך ראשי/מסך ראשי.jpg" RenderTransformOrigin="0.46,-0.231"/>
+        <Button x:Name="button2" FontSize="18"  Content="Tester" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Margin="27,252,0,0" Height="57" Click="button2_Click"/>
+        <Button x:Name="button" FontSize="18" Content="Trainee" HorizontalAlignment="Left" Height="57" Margin="206,252,0,0" VerticalAlignment="Top" Width="114" Click="button_Click"/>
+        <Button x:Name="button1" FontSize="18" Content="Test" HorizontalAlignment="Left" Height="57" Margin="377,252,0,0" VerticalAlignment="Top" Width="97" Click="button1_Click"/>
+        <Label x:Name="label" FontSize="16" Content="Welcome to the tests system" HorizontalAlignment="Left" Height="33" Margin="156,10,0,0" VerticalAlignment="Top" Width="225"/>
+    </Grid>
+
+</Window>

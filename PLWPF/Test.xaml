@@ -1,0 +1,16 @@
+﻿<Window x:Class="PLWPF.Test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="Test" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="button" FontSize="18" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="48,10,0,0"/>
+        <Button x:Name="button1" FontSize="18" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="167,10,0,0"/>
+        <Button x:Name="button2" FontSize="18" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="105,231,0,0"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="152" VerticalAlignment="Top" Width="292" Source="picture 2/מכונית 2,.jpg" Margin="10,51,-10,0" RenderTransformOrigin="0.521,0.623"/>
+
+    </Grid>
+</Window>
